@@ -3,30 +3,32 @@
 <br>
 
 <style>
-  h4{ color:#0C356A;
-    text-shadow: 2px 2px 4px #000000;
+  h4{ color:#01b9dd;
+    font-weight: bold;
+    {% comment %} text-shadow: 2px 2px 4px #000000; {% endcomment %}
 margin-left: 466px;
 font-family: sans-serif;
 margin-top:58px;}
-body{background-color:  rgb(13, 192, 192);}
+{% comment %} body{background-color:  rgb(13, 192, 192);} {% endcomment %}
 
 button {
-  background-color: #0c356a;
+  background-color: #01b9dd;
 }
 .btn-primary {
-  background-color: #094f9f;
+  background-color: #01b9dd;
 }
 .btn {
-    background-color: #0c356a;
+    background-color: #01b9dd;
     color: white;
     transition: background-color 0.7s;
     text-decoration: none;
+    border: none;
     padding: 8px 16px;
     border-radius: 4px;
 }
 
 .btn:hover {
-    background-color: #094f9f; /* Change to a darker shade for hover */
+    background-color: #5093ab; /* Change to a darker shade for hover */
 }
 
 .table-container{
@@ -47,7 +49,7 @@ button {
 <div class="container">
 <div class="table-container">
   <table class="table" style="margin-top:40px;">
-    <thead class="table-dark text-center">
+    <thead class="table-dark text-center" style="background-color: #5093ab;">
       <tr>
         <th scope="col">Total Amount Expected</th>
         <th scope="col">Total Amount Received</th>
@@ -72,7 +74,7 @@ button {
 <div class="container">
   <div class="table-container">
   <table class=" table">
-    <thead class="table-dark">
+    <thead class="table-dark" style="background-color: #5093ab;">
       <tr>
         <th scope="col">Customer's Name</th>
         <th scope="col">Item Bought</th>
@@ -106,8 +108,8 @@ button {
 
 </div>
 
-<a href="{% url 'item'  %}"  class="hover-button "><input type= "submit" value="Go back" class="btn btn-primary mt-2" type="button"/></a>
 </div>
+<a href="{% url 'item'  %}"  class="hover-button ml-5 "><input type= "submit" value="Go back" class="btn btn-primary mt-2" type="button"/></a>
 </div>
 
 {% endblock%}

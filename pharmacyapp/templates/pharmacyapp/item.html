@@ -17,8 +17,9 @@
 
     /* Your existing inline CSS */
     h4 {
-        color: #0C356A;
-        text-shadow: 2px 2px 4px #000000;
+        color: #01b9dd;
+        font-weight: bold;
+        {% comment %} text-shadow: 2px 2px 4px #000000; {% endcomment %}
         margin-left: 480px;
         margin-top: 83px;
     }
@@ -32,16 +33,17 @@
     }
 
     .btn {
-        background-color: #0c356a;
+        background-color: #01b9dd;
         color: white;
         transition: background-color 0.7s;
         text-decoration: none;
+        border: none;
         padding: 8px 16px;
         border-radius: 4px;
     }
 
     .btn:hover {
-        background-color: #094f9f; /* Change to a darker shade for hover */
+        background-color: #5093ab; /* Change to a darker shade for hover */
     }
    
 
@@ -85,7 +87,7 @@
         margin-left: 10px; /* Adjust spacing between input and button */
         
       }
-body{background-color:  rgb(13, 192, 192);}
+{% comment %} body{background-color:  rgb(13, 192, 192);} {% endcomment %}
 
  </style>
 
@@ -113,7 +115,7 @@ body{background-color:  rgb(13, 192, 192);}
 
 <table  id= "dataTable" class="table table-stripped table-hover">
     
-    <thead class="table-dark" style="text-align:center;">
+    <thead class="table-dark" style="text-align:center; background-color: #5093ab;">
         <tr>
             <th scope="col" class="project-h1" style="text-align:center;">Category</th>
             <th scope="col" class="project-h1" style="text-align:center;">Item name</th>
